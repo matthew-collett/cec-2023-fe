@@ -1,15 +1,13 @@
+<!-- index.ejs -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEC2023</title>
-</head>
+<%- include('common/head.ejs', { pageTitle: '?' }); %>
 <body>
-
-    <h1>Hello World</h1>
-    <h1><%= body %></h1>
-    
+    <%- include('common/nav.ejs'); %>
+    <main class="main">
+        <h1>CEC 2023</h1>
+    </main>
+    <%- include('common/footer.html'); %>
 </body>
+
 </html>

@@ -1,0 +1,25 @@
+<!-- nav.ejs -->
+<div class="nav-area navbar navbar-expand">
+    <nav class="navbar-content container-fluid">
+        <button class="nav-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-nav">
+            <ion-icon size="large" name="menu-outline"></ion-icon>
+        </button>
+        <a href="/"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+        <div class="navbar-wrapper">
+            <%- include('nav-links.html'); %>
+        </div>
+    </nav>
+</div>
+<div class="nav-area offcanvas offcanvas-start" id="mobile-nav">
+    <nav class="container-fluid">
+        <div class="offcanvas-header">
+            <a href="/"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+            <button class="nav-button" type="button" data-bs-dismiss="offcanvas" data-bs-target="#mobile-nav">
+                <ion-icon size="large" name="close-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <%- include('nav-links.html'); %>
+        </div>
+    </nav>
+</div>

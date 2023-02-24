@@ -4,7 +4,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const { callPython } = require('./public/scripts/py_caller')
+const { callPython } = require('./py-caller')
 
 const port = 3000;
 
@@ -23,8 +23,8 @@ app.listen(port, () => {
 /* main page */
 app.get('/', async function (req, res) {
 
-    body = await callPython("driver.py");
-   
+    body = await callPython(path.join(__dirname, 'public/scripts/test.py'));
+
     // render the page 
-    res.render(__dirname + '/client/index', body);
+    res.render(path.join(__dirname, '/client/index'), body);
 });
