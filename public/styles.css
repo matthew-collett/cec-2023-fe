@@ -19,7 +19,7 @@ body {
 
 .main {
     max-width: calc(var(--max-width));
-    min-height: calc(100vh - 86px - 50px);
+    min-height: calc(100vh - 86px - 66px);
     margin: auto;
     padding: 16px 16px;
     background-color: var(--color-white);
@@ -81,7 +81,7 @@ img {
 }
 
 .nav-button {
-    color: var(--color-prim);
+    color: var(--color-sec);
     background: none;
     border: none;
     line-height: 0px;
@@ -149,13 +149,14 @@ ion-icon {
 .footer {
     font-weight: 500;
     height: 50px;
+    margin-top: 16px;
 }
 
 .page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 32px 0;
 }
 
 .logo {
@@ -257,6 +258,12 @@ ion-icon {
 
 
 @media (max-width: 576px) {
+
+    .footer {
+        font-size: 13px;
+        padding: 8px;
+    }
+
     .dt-buttons {
         flex-direction: column;
         
@@ -289,7 +296,7 @@ ion-icon {
         height: 41px;
     }
     .main {
-        min-height: calc(100vh - 73px - 50px);
+        min-height: calc(100vh - 73px - 66px);
     }
 
     .dt-buttons {

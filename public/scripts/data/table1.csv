@@ -1,0 +1,36 @@
+sep=|
+Resource|Sector|Quantity|Unit|Total Value ($CAD)
+Extraction|Forestry|2446|metric_ton|2001000000
+Services|Forestry|2080000|hr|3743000000
+Primary manufacturing|Forestry|113861538461.53845|kWh|14802000000
+Primary sawmill and wood products|Forestry|16793906285.005257|ft|9745000000
+Primary pulp and paper products|Forestry|4206857.074508531|metric_ton|4924000000
+Primary forestry bioproducts|Forestry|3325000.0|metric_ton|133000000
+Bioenergy and biofuel (from forestry biomass)|Forestry|33641975.30864197|gallon|109000000
+Other bioproducts (from forestry biomass)|Forestry|800.0|kg|24000000
+Secondary wood products|Forestry|6031.818181818182|lb|2654000000
+Secondary paper products|Forestry|165913043.47826087|metric_ton|3816000000
+Services and custom work|Forestry|468000|hr|549000000
+Extraction|Minerals and mining|28620000000000.0|ton|28620000000
+Coal|Minerals and mining|64168618.26697892|short_ton|2740000000
+Metallic minerals|Minerals and mining|346100000.0|metric_ton|17305000000
+Non-metallic minerals|Minerals and mining|285833333.3333333|metric_ton|8575000000
+Services|Minerals and mining|1040000|hr|5239000000
+Primary manufacturing|Minerals and mining|110376923076.92308|kWh|14349000000
+Primary metallic minerals products|Minerals and mining|113714285.71428572|metric_ton|7960000000
+Primary non-metallic minerals products|Minerals and mining|106500000.0|metric_ton|6390000000
+Services and custom work|Minerals and mining|206600|hr|2057000000
+Secondary metal products|Minerals and mining|29877777.777777776|ton|2689000000
+Tertiary metal products|Minerals and mining|286622222.2222222|ton|12898000000
+Miscellaneous metal products|Minerals and mining|10980000000.0|kg|3294000000
+Extraction|Energy|715514285714.2856|kWh|50086000000
+Crude oil|Energy|55003797468.35443|L|43453000000
+Natural gas|Energy|829125000000.0|cubic_feet|6633000000
+Services|Energy|1582000|hr|26996000000
+Primary manufacturing|Energy|372146153846.1538|kWh|48379000000
+Electricity|Energy|280007692307.6923|kWh|36401000000
+Bioenergy|Energy|1253846153.8461537|kWh|163000000
+Refined petroleum products (fuels and lubricants)|Energy|17388000000.0|gallon|8694000000
+Biofuels|Energy|2542857142.857143|L|445000000
+Petrochemicals|Energy|1828333333.3333335|gallon|2194000000
+Other refined petroleum and coal products|Energy|1816666666.6666667|gallon|1090000000

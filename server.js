@@ -23,7 +23,8 @@ app.listen(port, () => {
 /* main page */
 app.get('/', async function (req, res) {
 
-    body = await callPython(path.join(__dirname, 'public/scripts/test.py'));
+    // get data from python
+    body = await callPython(path.join(__dirname, 'public/scripts/data/in-full.py'));
 
     // render the page 
     res.render(path.join(__dirname, '/client/index'), body);
@@ -40,21 +41,31 @@ app.get('/create-account', async function (req, res) {
 });
 
 app.get('/equally', async function (req, res) {
+
     // render the page 
-    res.render(__dirname + '/client/equally');
+    res.render(path.join(__dirname, '/client/equally'));
 });
 
 app.get('/proportion', async function (req, res) {
+
     // render the page 
-    res.render(__dirname + '/client/proportion');
+    res.render(path.join(__dirname, '/client/proportion'));
 });
 
 app.get('/urgency', async function (req, res) {
+
     // render the page 
-    res.render(__dirname + '/client/urgency');
+    res.render(path.join(__dirname, '/client/urgency'));
 });
 
 app.get('/distribution', async function (req, res) {
+
     // render the page 
-    res.render(__dirname + '/client/distribution');
+    res.render(path.join(__dirname, '/client/disribution'));
+});
+
+app.get('/in-full-chart-1', async function (req, res) {
+
+    // render the page 
+    res.render(path.join(__dirname, '/client/charts/in-full-chart-1'));
 });
