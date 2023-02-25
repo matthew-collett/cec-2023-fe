@@ -1,0 +1,17 @@
+<!-- build-table.ejs -->
+<thead>
+    <tr>
+        <% for(let i = 0; i < tableHeader.length; i++) { %>
+        <td><%= tableHeader[i] %></td>
+        <% } %>
+    </tr>
+</thead>
+<tbody>
+    <% for(let i = 0; i < tableData.length; i++) { %>
+    <tr>
+        <% for(let j = 0; j < tableData[i].length; j++) { %>
+        <td><%= tableData[i][j] %></td>
+        <% } %>
+    </tr>
+    <% } %>
+</tbody>

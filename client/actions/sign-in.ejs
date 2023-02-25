@@ -1,0 +1,22 @@
+<!-- sign-in.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../common/head.ejs', { pageTitle: 'Sign In' }); %>
+<body>
+    <div class="signin-wrapper">
+        <div class="card shadow">
+            <img src="/assets/logo.png" alt="Logo" class="logo">
+            <h5 class="text-center">Welcome</h5>
+            <p class="text-center">Sign in to continue to Resource Allocation Manager</p>
+            <form class="signin-form needs-validation" action="/auth" method="post" novalidate>
+                <input class="form-control" type="text" name="username" placeholder="Username" required>
+                <input class="form-control" type="password" name="password" placeholder="Password" required>
+                <span class="invalid-feedback text-center" style="color: red;">Invalid credentials. Please try again</span>
+                <button class="button" type="submit">Sign In</button>
+                <span class="text-center">New? <a href="/create-account" class="signin-link text-center">Create an Account</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../scripts/form_control.js"></script>
+</html>

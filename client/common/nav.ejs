@@ -7,6 +7,16 @@
         <a href="/"><img src="assets/logo.png" alt="Logo" class="logo"></a>
         <div class="navbar-wrapper">
             <%- include('nav-links.html'); %>
+            <div class="dropdown">
+                <button class="nav-button dropdown-button" type="button">
+                    <ion-icon size="large" name="person-circle-outline"></ion-icon>
+                </button>
+                <div class="account-menu">
+                    <h6>Hello, User!</h6>
+                    <hr>
+                    <a href="/sign-in"><div class="account-option">Sign Out</div></a>
+                </div>
+        
         </div>
     </nav>
 </div>
@@ -23,3 +33,4 @@
         </div>
     </nav>
 </div>
+<script src="scripts/dropdown.js" defer></script>

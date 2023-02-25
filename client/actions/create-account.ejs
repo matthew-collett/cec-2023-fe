@@ -1,0 +1,36 @@
+<!-- create-account.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../common/head.ejs', { pageTitle: 'Create Account' }); %>
+<body>
+    <div class="signin-wrapper">
+        <div class="card shadow create-account">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <h5 class="text-center">Resource Allocation Manager</h5>
+            <p class="text-center">Enjoy the optimization monetary value of exports</p>
+            <form class="signin-form needs-validation" action="/create" method="post" novalidate>
+                <div class="row g-2">
+                    <div class="col">
+                        <input class="form-control" type="text" name="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="col">
+                        <input class="form-control" type="text" name="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col">
+                        <input class="form-control" type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="col">
+                        <input class="form-control" type="password" name="password" placeholder="Password" required>
+                    </div>
+                </div>
+                <input class="form-control" type="text" name="code" placeholder="Access Code" required>
+                <button class="button" type="submit">Create Account</button>
+                <span class="text-center">Have an account? <a href="/sign-in" class="signin-link text-center">Sign In</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../scripts/form_control.js"></script>
+</html>
