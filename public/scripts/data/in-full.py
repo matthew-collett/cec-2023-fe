@@ -188,7 +188,7 @@ table_data = []
 for i in range(len(country_list)):
     table_data.append([country_list[i], quantity_value_list[i], donation_value_list[i]])
 
-data = {'tableHeader': ['Country', 'Resources By Sector', 'Money Received'], 'tableData': table_data}
+data = {'tableHeader': ['Country', 'Resources', 'Money Received'], 'tableData': table_data}
 
 
 if __name__ == '__main__':
